@@ -1,0 +1,23 @@
+[리눅스]
+
+<스크립트에 실행 권한 부여>
+
+권한:   d      /     rwx      /   rwx   /    rwx
+
+     디렉토리  /    소유자     /   그룹  / 다른 사용자
+
+파일 생성 후 실행 권한 부여해야 함 / g(그룹), u(사용자), o(다른 사용자), a(모두)
+
+ex) chmod u+rwx 파일명
+chmod 755 파일명.py
+
+
+<cron job>
+정해진 시간마다 작업해주기 위해서 cron job 설정 -> 리눅스에서
+분 시 일 월 요일 /파이썬의 위치 /실행파일의 위치
+
+ex) 웹자동화(Normal - maintenance mode)
+0 16 * * 1-5 /data001/vc.integrator/Web_Automation/maintenanceMode.py
+
+<참고>
+https://dslyh01.tistory.com/10
